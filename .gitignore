@@ -1,0 +1,44 @@
+# ---- 大数据与第三方文件：不入库 ----
+# ECDICT 词典约 65.9 MB，超过 GitHub 单文件 50 MB 警告线
+data/ecdict.csv
+# 第三方整理的词表源文档，版权存疑
+data/*.docx
+
+# ---- 历史版本产物：不入库 ----
+# out/ 只保留当前版 HTML 与 words.json
+out/archive/
+
+# ---- Python ----
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+
+# ---- 日志 ----
+*.log
+
+# ---- Node（仅测试用，产物零依赖）----
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# ---- IDE / 编辑器 ----
+.vscode/
+.idea/
+*.swp
+*.swo
+*.iml
+
+# ---- 操作系统 ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- 本地工具缓存 ----
+.workbuddy/
+
+# ---- 临时/无关测试（不属于本仓库，来自其他项目的临时回归脚本）----
+_tmp_handbook_test.mjs
